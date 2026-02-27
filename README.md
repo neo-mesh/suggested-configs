@@ -38,6 +38,21 @@ For devices without a display, we strongly recommend changing the bluetooth PIN.
 ## Module Configuration
 
 ### MQTT
+#### What is MQTT and why does it matter?
+
+In a standard Meshtastic mesh, nodes communicate with each other over LoRa radio — messages hop from node to node until they reach their destination. This works great locally, but is limited by range and the number of hops a message can take.
+
+MQTT extends the mesh over the internet. When a node with internet access (via WiFi or a paired phone) receives a LoRa message, it can forward ("uplink") that message to an MQTT broker — a central server that other nodes also connect to. Those remote nodes can then receive the message and rebroadcast it over their local LoRa radio ("downlink"), effectively bridging geographically distant mesh networks together.
+
+For NEO Mesh, this means a node in one part of Northeast Ohio can exchange messages with a node in a completely different area that would otherwise be out of radio range — as long as both have internet-connected nodes nearby that are linked to `mqtt.neomesh.org`.
+
+A few things to keep in mind:
+
+- **"OK to MQTT"** (set in LoRa config above) must be enabled for your messages to be forwarded to the broker. If it's off, internet-connected nodes will not uplink your messages even if they receive them.
+- **Client Proxy** means your node uses a paired phone's internet connection to reach the broker, rather than its own WiFi. Use this if your node doesn't have WiFi.
+- **Encryption Enabled** ensures messages are not sent to the broker in plaintext.
+- MQTT participation is optional — nodes without internet access still participate fully in the local LoRa mesh.
+ 
 If you'd like to participate in NEO Mesh MQTT server:
 
 | Setting | Value | Notes |
