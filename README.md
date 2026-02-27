@@ -17,7 +17,7 @@ We're only listing settings we have suggestions for, this list is not comprehens
 |OK to MQTT | On
 |Number of Hops | 7 
 
-### Channels
+## Channels
 
 | # | Name | Key | Notes |
 |---|------|-----|-------|
@@ -25,14 +25,17 @@ We're only listing settings we have suggestions for, this list is not comprehens
 
 Set the rest of the channels however you like.
 
-### Security
+## Security
 Always back up your keys.  Set everything else to your preferences.
 
+## Device Configuration
 ### User
 Configure how you like.  Leave "licensed operator off" even if you're a ham.
 
 ### Bluetooth
 For devices without a display, we strongly recommend changing the bluetooth PIN.
+
+## Module Configuration
 
 ### MQTT
 If you'd like to participate in NEO Mesh MQTT server:
@@ -52,6 +55,7 @@ If you'd like to participate in NEO Mesh MQTT server:
 # Client/Companion Nodes
 Everyday nodes you carry with you
 
+## Device Configuration
 ### Device
 | Setting | Value | Notes |
 |---------|-------|-------|
@@ -59,21 +63,39 @@ Everyday nodes you carry with you
 
 # House/Low-Profile Permanent Nodes
 
+## Radio Configuration
 ### Security
 Add the public keys from your client node(s) to enable remote admin.
 
+## Device Configuration
 ### Device
 | Setting | Value | Notes |
 |---------|-------|-------|
 | Role | Client Base | Make sure to add your companion nodes as favorites
 
+## Module Configuration
+### Telemetry
+| Setting | Value | Notes |
+|---------|-------|-------|
+| Broadcast Device Metrics | On | Helps keep track of battery level, air utilitzation, etc.
+
 
 # High-Profile Nodes
 
+## Radio Configuration
 ### Security
 Add the public keys from your client node(s) to enable remote admin.
 
+## Device Configuration
 ### Device
 | Setting | Value | Notes |
 |---------|-------|-------|
 | Role | Router | Coordinate with the community on Discord.
+
+## Module Configuration
+### Telemetry
+| Setting | Value | Notes |
+|---------|-------|-------|
+| Broadcast Device Metrics | On | Helps keep track of battery level, air utilitzation, etc.
+
+
