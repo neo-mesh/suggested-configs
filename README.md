@@ -15,7 +15,7 @@ We're only listing settings we have suggestions for, this list is not comprehens
 |Use Preset | On
 |Preset | LongFast | Required to participate in the mesh
 |OK to MQTT | On
-|Number of Hops | 7
+|Number of Hops | 7 
 
 ### Channels
 
@@ -52,7 +52,28 @@ If you'd like to participate in NEO Mesh MQTT server:
 # Client/Companion Nodes
 Everyday nodes you carry with you
 
+### Device
+| Setting | Value | Notes |
+|---------|-------|-------|
+| Role | Client Mute | Client can be fine in some situations
+
 # House/Low-Profile Permanent Nodes
+
+### Security
+Add the public keys from your client node(s) to enable remote admin.
+
+### Device
+| Setting | Value | Notes |
+|---------|-------|-------|
+| Role | Client Base | Make sure to add your companion nodes as favorites
 
 
 # High-Profile Nodes
+
+### Security
+Add the public keys from your client node(s) to enable remote admin.
+
+### Device
+| Setting | Value | Notes |
+|---------|-------|-------|
+| Role | Router | Coordinate with the community on Discord.
