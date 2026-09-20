@@ -13,7 +13,7 @@
 ## Step 1 — Flash MeshCore via Web Flasher
 
 **1.** Open your browser and go to:
->  https://flasher.meshcore.co.uk
+>  https://meshcore.io/flasher
 
 **2.** Select your **device model** from the dropdown and click on it.
 
@@ -60,6 +60,7 @@ Click **Save settings** in the web setup
 
 ## Useful Links
 
-- Web Flasher: https://flasher.meshcore.co.uk
+- Web Flasher: https://meshcore.io/flasher
 - MeshCore GitHub: https://github.com/meshcore-dev/MeshCore
+- Meshcore web client: https://app.meshcore.nz
 
