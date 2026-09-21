@@ -21,7 +21,7 @@ We're only listing settings we have suggestions for, this list is not comprehens
 
 | # | Name | Key | Notes |
 |---|------|-----|-------|
-| 0 | (Default) | `AQ==` | Leave at defaults, enable position if you want
+| 0 | (Default) | `AQ==` | Required to participate in the mesh. Leave at defaults, enable position if you want
 
 Set the rest of the channels however you like.
 
